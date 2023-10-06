@@ -143,8 +143,8 @@ address {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)
-        );
-    background: url('../images/people-office.jpg');
+        ),
+        url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -241,7 +241,23 @@ button {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+.description-icons{
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+border: 1px solid  #8E8F99;
+background:  #F4F4FD;
+}
+.description-icon-item {
+    display: flex;
+    fill: #404bbf;
 
+}
 /**===================================**/
 /**==============TEAM=================**/
 .team {
@@ -298,13 +314,26 @@ button {
 .team-icon-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
+    padding-top: 8px;
+    align-items: center;
 }
 .team-icon {
-    width: 12px;
-    height: 12px;
-    fill: black;
-}
+fill: black;
+width: 40px;
+height: 40px;
+align-items: center; 
+justify-content: center;
 
+}
+.team-icon::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color:#4D5AE5;
+    border-radius: 50%;
+
+}
 
 
 /**===================================**/
