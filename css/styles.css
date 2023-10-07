@@ -322,10 +322,6 @@ margin-bottom: 8px;
     align-items: center;
 }
 
-.team-icon {
-
-}
-
 .link {
 background-color:#4D5AE5;
 border-radius: 50%;
@@ -403,6 +399,14 @@ justify-content: center;
     background-color: #2e2f42;
     padding: 100px 0;
 }
+.container-footer {
+    display: flex;
+    align-items: baseline;
+
+}
+.footer-container-logo {
+    margin-right: 120px;
+}
 
 .footer-logo-web {
     color: #4D5AE5;
@@ -438,9 +442,17 @@ color:  #FFF;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing: 0.32px;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
 }
-.footer-icons {
+.icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 8px;
+    align-items: center;
+}
+.icon-soc {
     background-color:#4D5AE5;
     border-radius: 50%;
     width: 40px;
@@ -449,6 +461,7 @@ letter-spacing: 0.32px;
     align-items: center; 
     justify-content: center; 
 }
+
 
 
 /**==============================**/
