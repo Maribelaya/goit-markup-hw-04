@@ -150,6 +150,7 @@ address {
     background-size: cover;
     padding-top: 188px; 
     padding-bottom: 188px;
+    max-width: 1440px;
 }
 
 .title-header {
@@ -241,7 +242,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
-.description-icons{
+.description-icons {
     width: 264px;
     height: 112px;
     flex-shrink: 0;
@@ -252,10 +253,12 @@ button {
     border-radius: 4px;
 border: 1px solid  #8E8F99;
 background:  #F4F4FD;
+margin-bottom: 8px;
 }
+
 .description-icon-item {
     display: flex;
-    fill: #404bbf;
+    fill: black;
 
 }
 /**===================================**/
@@ -318,23 +321,24 @@ background:  #F4F4FD;
     padding-top: 8px;
     align-items: center;
 }
+
 .team-icon {
-fill: black;
+
+}
+
+.link {
+background-color:#4D5AE5;
+border-radius: 50%;
 width: 40px;
 height: 40px;
+display: flex;
 align-items: center; 
 justify-content: center;
-
-}
-.team-icon::after {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-color:#4D5AE5;
-    border-radius: 50%;
-
 }
 
+.link:hover{
+    background-color: green;
+}
 
 /**===================================**/
 
@@ -429,6 +433,23 @@ justify-content: center;
     letter-spacing: 0.32px;
     width: 264px;
 }
+.social-media {
+color:  #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.32px;
+}
+.footer-icons {
+    background-color:#4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
 
 /**==============================**/
 
