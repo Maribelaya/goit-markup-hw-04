@@ -54,10 +54,16 @@ address {
 
 .header-container {
     display: flex;
+    position: relative; 
+    color: #404bbf;
 }
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px 
+    rgba(46, 47, 66, 0.08), 0px 1px 1px
+    rgba(46, 47, 66, 0.16), 0px 1px 6px 
+    rgba(46, 47, 66, 0.08); 
 }
 
 .header-navigation-logo-blue {
@@ -90,8 +96,19 @@ address {
     font-style: normal;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+.header-menu-list::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    
+}
 .header-menu-list:hover {
     color: #404bbf;
 }
@@ -126,6 +143,7 @@ address {
     letter-spacing: 0.02em;
     font-style: normal;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header-address-list:hover {
@@ -325,6 +343,11 @@ button {
     gap: 24px;
     padding-top: 8px;
     align-items: center;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus {
+    background-color: #404BBF;
 }
 
 .link {
@@ -337,18 +360,7 @@ button {
     align-items: center;
     justify-content: center;
 }
-.icon-soc {
-    width: 24px;
-    height: 24px;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link:hover {
-    background-color: #31d0aa;
-}
-.link:focus {
-    background-color: #31d0aa;
-}
 
 
 /**===================================**/
@@ -374,7 +386,6 @@ button {
 
 .portfolio-submenu-list {
     width: calc((100% - 48px) / 3);
-    transition: box-shadom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-submenu-list:hover .text-on-foto {
@@ -387,6 +398,7 @@ button {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .portfolio-foto {
@@ -491,15 +503,18 @@ button {
     margin-bottom: 16px;
 }
 
-.icon-list {
+.footer-icon-list {
     display: flex;
     justify-content: center;
     gap: 16px;
     padding-top: 8px;
     align-items: center;
 }
-
-.icon-soc {
+.footer-icon-soc {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link {
+    fill: #f4f4fd;
     background-color: #4D5AE5;
     border-radius: 50%;
     width: 40px;
@@ -508,8 +523,10 @@ button {
     align-items: center;
     justify-content: center;
 }
-
-
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #31D0AA;
+}
 
 
 /**==============================**/
